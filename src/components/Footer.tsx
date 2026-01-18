@@ -1,5 +1,12 @@
-import { motion } from 'framer-motion';
-import { Mail, MapPin, Calendar, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { motion } from "framer-motion";
+import {
+  Mail,
+  MapPin,
+  Calendar,
+  Instagram,
+  Twitter,
+  Linkedin,
+} from "lucide-react";
 
 const Footer = () => {
   return (
@@ -17,16 +24,17 @@ const Footer = () => {
           transition={{ duration: 0.8 }}
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4">
-            Ready to <span className="text-gradient-gold">Make Your Mark</span>?
+            Ready to{" "}
+            <span className="text-gradient-gold">Make Your Mark</span>?
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-            Join us in Bhubaneswar for two days of diplomatic excellence. 
+            Join us in Bhubaneswar for two days of diplomatic excellence.
             Registration opens soon.
           </p>
-          <a 
-            href="https://forms.google.com" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://forms.google.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-gold inline-block"
           >
             Register Interest
@@ -35,7 +43,7 @@ const Footer = () => {
 
         {/* Info Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {/* Date & Venue */}
+          {/* Date */}
           <motion.div
             className="card-diplomatic p-6"
             initial={{ opacity: 0, y: 20 }}
@@ -54,6 +62,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
+          {/* Venue */}
           <motion.div
             className="card-diplomatic p-6"
             initial={{ opacity: 0, y: 20 }}
@@ -68,13 +77,15 @@ const Footer = () => {
                   Venue
                 </h3>
                 <p className="text-muted-foreground">
-                  World Skill Centre<br />
+                  World Skill Centre
+                  <br />
                   Bhubaneswar, Odisha
                 </p>
               </div>
             </div>
           </motion.div>
 
+          {/* Contact */}
           <motion.div
             className="card-diplomatic p-6"
             initial={{ opacity: 0, y: 20 }}
@@ -100,9 +111,9 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
               <span className="text-xl font-serif font-bold text-gradient-gold">
-                Aeternum</span>MUN
+                Aeternum <span className="ml-1">MUN</span>
               </span>
               <span className="text-xs font-mono text-muted-foreground">
                 2026
